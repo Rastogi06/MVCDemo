@@ -12,11 +12,12 @@ namespace WebApplication2.Controllers
         public ActionResult Index(string id)
         {
             TempData["value"] = id;
+            TempData.Keep("value");
             return View();
         }
-        public string Display()
+        public ActionResult Display()
         {
-            return "Thank You";
+            return View();
         }
 
     }
