@@ -1,0 +1,21 @@
+﻿
+@{
+    Layout = null;
+    @TempData["value"];
+    @*@Html.ActionLink("Click", "Display", "Home")*@
+    <input type="button" value="Click" onclick="location.href='@Url.Action("Display", "Home")'" />
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+  
+    <div>
+    </div>
+</body>
+</html>
